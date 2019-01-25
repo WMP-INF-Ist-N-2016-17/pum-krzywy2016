@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.moniaczek.projekt.Activity1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="5dp">
+    <TextView
+        android:text="Intruz"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:id="@+id/textView2"
+        android:textColor="@color/colorAccent"
+        android:textSize="32dp"
+        android:gravity="center"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/intruz"
+        android:id="@+id/imageView2"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:text="Thriller, Romans, Sci-Fi (2013)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4"
+            android:textColor="@color/colorCategory"
+            android:textSize="18dp"
+            android:textStyle="italic"/>
+
+        <TextView
+            android:text="Ocena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:layout_marginTop="25dp"/>
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="1.0"
+            android:rating="2.0" />
+
+        <Button
+            android:text="Wyślij"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSave" />
+
+        <TextView
+        android:text="Przyszłość. Panowanie na Ziemi przejął niewidzialny wróg. Najeźdźcy opanowali ludzkie ciała umieszczając w nich Dusze, dla których ludzie są jedynie żywicielami. Dusze są z natury dobre, spokojne i łagodne, ale nie potrafią czuć jak my. Melanie - jedna z ostatnich wolnych istot, zostaje schwytana, a w jej ciele umieszczona zostaje Wagabunda. Jest to doświadczona dusza, która zamieszkiwała już na siedmiu planetach. Jej zadaniem jest poznanie wspomnień Melanie i odkrycie, gdzie jeszcze ukrywają się buntownicy czyli wolni ludzie. Zadanie okazuje się jednak o wiele trudniejsze niż można było przypuszczać. Melanie jest wyjątkowo silną osobowością i toczy z Wagabundą walkę o panowanie nad ciałem i umysłem. Co więcej - z czasem - Wagabunda poznaje wspomnienia dziewczyny o ukochanym mężczyźnie i sama zaczyna odczuwać coś dziwnego… Wkrótce Melanie i Wagabudna zawrą swoisty pakt i wyruszą na pustynię w poszukiwaniu mężczyzny bez którego nie potrafią żyć…"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:id="@+id/textView3"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp"
+        android:gravity="center_vertical"/>
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

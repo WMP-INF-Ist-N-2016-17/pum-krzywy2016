@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.moniaczek.projekt.Activity4">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="5dp">
+            <TextView
+                android:text="Kod da Vinci"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="22dp"
+                android:id="@+id/textView2"
+                android:textColor="@color/colorAccent"
+                android:textSize="32dp"
+                android:gravity="center"/>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="256dp"
+                app:srcCompat="@drawable/koddavinci"
+                android:id="@+id/imageView4"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="25dp"/>
+
+            <TextView
+                android:text="Thriller (2006)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView4"
+                android:textColor="@color/colorCategory"
+                android:textSize="18dp"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:text="Ocena"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView"
+                android:layout_marginTop="25dp"/>
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:stepSize="1.0"
+                android:rating="2.0" />
+
+            <Button
+                android:text="Wyślij"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnSave4" />
+
+            <TextView
+                android:text="Ofiarą popełnionego w Luwrze morderstwa pada kustosz muzeum Jacques Sauniere. Wezwany przez DCPJ Robert Langdon, harwardzki wykładowca i spec od wszelkich symboli, odkrywa na miejscu szereg zakonspirowanych śladów, które mogą pomóc w ustaleniu zabójcy, ale też stanowią klucz do jeszcze większej zagadki- niezwykłej tajemnicy sięgającej swoimi korzeniami samego początku chrześcijaństwa. Langdon podejrzewa, że ofiara była członkiem tajnego stowarzyszenia - Zakonu Syjonu - strzegącego od 1099r. największego skarbu ludzkości - Świętego Graala. Ale pozostały tylko 24h. na rozwikłanie precyzyjnie skonstruowanej łamigłówki pozostawionej przez Sauniera, albo tajemnica na zawsze przepadnie. Jedynym sprzymierzeńcem, ściganego przez policje i bezlitosnego zabójcę Langdona, jest piękna Sophie Neveu, agentka kryptograf francuskiego DCJP i zarazem wnuczka Sauniera, która chce odkryć prawdę o swojej rodzinie... "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="29dp"
+                android:id="@+id/textView3"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp"
+                android:gravity="center_vertical"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

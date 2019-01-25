@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.moniaczek.projekt.Activity2">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="5dp">
+            <TextView
+                android:text="Nietykalni"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="22dp"
+                android:id="@+id/textView2"
+                android:textColor="@color/colorAccent"
+                android:textSize="32dp"
+                android:gravity="center"/>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                app:srcCompat="@drawable/nietykalni"
+                android:id="@+id/imageView3"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:text="Biograficzny, Dramat, Komedia (2011)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView4"
+                android:textColor="@color/colorCategory"
+                android:textSize="18dp"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:text="Ocena"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView"
+                android:layout_marginTop="25dp"/>
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:stepSize="1.0"
+                android:rating="2.0" />
+
+            <Button
+                android:text="Wyślij"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnSave" />
+
+            <TextView
+                android:text="Komedia opowiada historię, która zdarzyła się naprawdę. Sparaliżowany na skutek wypadku milioner zatrudnia do pomocy i opieki młodego chłopaka z przedmieścia, który właśnie wyszedł z więzienia. Zderzenie dwóch skrajnie różnych światów daje początek szeregowi niewiarygodnych przygód i przyjaźni, która uczyni ich... nietykalnymi!"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="29dp"
+                android:id="@+id/textView3"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp"
+                android:gravity="center_vertical"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
